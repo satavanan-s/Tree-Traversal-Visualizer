@@ -1,6 +1,6 @@
 import React from 'react';
 import "./TreeTraversalVisualizer.css"
-import TreeBackEnd from './Backend/Tree.js'
+import TreeBackEnd from './TraversalLogic/Tree.js'
 const ANIMATION_SPEED = 1500;
 
 function Node(props) {

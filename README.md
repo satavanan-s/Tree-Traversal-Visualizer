@@ -6,7 +6,7 @@ Binary Search Trees (BST).
 
 # Project Information 
 This project allows users create their own Binary Search Tree (the application takes care of insertion) or generate one automatically. 
-With the BST you are able to visualize In-Order, Pre-Order, and Post-Order Traversal. Find the Backend work in [src/TreeTraversalVisualizer/Backend/](src/TreeTraversalVisualizer/Backend/), and the front end work in [src/TreeTraversalVisualizer/](src/TreeTraversalVisualizer/).
+With the BST you are able to visualize In-Order, Pre-Order, and Post-Order Traversal. Find the Traversal Logic in [src/TreeTraversalVisualizer/Backend/](src/TreeTraversalVisualizer/TraversalLogic/), and the front end work in [src/TreeTraversalVisualizer/](src/TreeTraversalVisualizer/).
 
 ![](Demonstration.gif)
 
