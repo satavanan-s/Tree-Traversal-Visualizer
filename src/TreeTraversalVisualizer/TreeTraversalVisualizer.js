@@ -57,7 +57,6 @@ class TreeTraversalVisualizer extends React.Component {
         }
         this.setState({ displayTraversal: [] });
     }
-   
     sendTraversalRequest(req) {
         if (this.state.tree.head == null) {
             alert("You have an empty tree, add some elements!");
