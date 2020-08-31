@@ -8,6 +8,9 @@ Binary Search Trees (BST).
 This project allows users create their own Binary Search Tree (the application takes care of insertion) or generate one automatically. 
 With the BST you are able to visualize In-Order, Pre-Order, and Post-Order Traversal. Find the Traversal Logic in [src/TreeTraversalVisualizer/TraversalLogic/](src/TreeTraversalVisualizer/TraversalLogic/), and the front end work in [src/TreeTraversalVisualizer/](src/TreeTraversalVisualizer/).
 
+# Deployment
+I've deployed the React App using AWS Amplify. View the project here: https://satavanan.ca/Tree_Traversal_Visualizer
+
 ![](Demonstration.gif)
 
 -------------------------------------------------------------------------------------------------------
