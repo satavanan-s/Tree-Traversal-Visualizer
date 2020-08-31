@@ -47,7 +47,7 @@ class TreeTraversalVisualizer extends React.Component {
         event.preventDefault();
     }
     refreshTree(req) {
-        let highestTimeoutId = setTimeout(()=>console.log(""), 0);
+        let highestTimeoutId = setTimeout(';');
         for (let i = 0; i < highestTimeoutId; i++) {
             clearTimeout(i);
         }
@@ -56,6 +56,10 @@ class TreeTraversalVisualizer extends React.Component {
             animation[i].leaveNode();
         }
         this.setState({ displayTraversal: [] });
+    }
+    deleteTree(){
+        this.refreshTree('post');
+        this.setState({ tree: new TreeBackEnd(), nodes: 0 });
     }
     sendTraversalRequest(req) {
         if (this.state.tree.head == null) {
@@ -115,7 +119,7 @@ class TreeTraversalVisualizer extends React.Component {
                         <button onClick={() => this.sendTraversalRequest('post')}>Post Order Traversal</button>
                     </div>
                     <div>
-                        <button onClick={() => this.setState({ tree: new TreeBackEnd(), nodes: 0 })}>Restart Tree</button>
+                        <button onClick={() => this.deleteTree()}>Restart Tree</button>
                         <button onClick={() => this.generateTree()}>Generate New Tree</button>
                     </div>
                     <div>
