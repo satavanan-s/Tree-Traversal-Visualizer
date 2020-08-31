@@ -1,4 +1,4 @@
-This project was created with the goal of learning React in a pratical manner. 
+This project was created in a Hackathon type enviroment with the goal of learning React in a pratical manner. 
 
 # Binary Search Tree Traversal Visualizer
 I built this application because I'm interested in graph theory and I wanted to visualize Tree Traversals in action. To add a bit of spice, the application traverses
