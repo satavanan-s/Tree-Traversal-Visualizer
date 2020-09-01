@@ -10,25 +10,25 @@ export default class TreeBackEnd {
             this.head = new NodeBackEnd(value);
             return;
         }
-        let runner = this.head;
-        while (true) {
-            if (value > runner.value) {
-                if (runner.right == null) {
-                    runner.right = new NodeBackEnd(value);
-                    return;
-                }
-                else {
-                    runner = runner.right;
-                }
+        this.insertHelper(this.head, value);
+    }
+    insertHelper(node, value){
+        if(value > node.value){
+            if(node.right == null){
+                node.right = new NodeBackEnd(value);
+                return;
             }
-            else {
-                if (runner.left == null) {
-                    runner.left = new NodeBackEnd(value);
-                    return;
-                }
-                else {
-                    runner = runner.left;
-                }
+            else{
+                this.insertHelper(node.right, value);
+            }
+        }
+        else{
+            if(node.left == null){
+                node.left = new NodeBackEnd(value);
+                return;
+            }
+            else{
+                this.insertHelper(node.left, value);
             }
         }
     }
